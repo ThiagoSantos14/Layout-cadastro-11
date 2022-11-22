@@ -1,0 +1,91 @@
+<style>
+    .form-cadastro {
+        text-align: center;
+        margin-top: 190px;
+    }
+
+    .foto-logo {
+        text-align: center;
+    }
+
+    .borda {
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 17px;
+        border-radius: 20px;
+        
+    }
+
+    input[type="email"] {
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    input[type="password"] {
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    input[type="tel"] {
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    input[type="number"] {
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+        width: 100px;
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .rodape {
+        text-align: center;
+        margin-top: 330px;
+    }
+</style>
+
+<div class="foto-logo">
+    <img src="https://www.consorcio123sistema.com.br/sce/comum/img/login/cadastro.png" title="Foto-cadastro" alt="Logo tipo de um cadastro" width="300"><hr>
+</div>
+<section class="form-cadastro">
+    <form action="form-cadastro01" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset class="borda">
+            <input type="text" name="nome" placeholder=" Nickname" required><br><br>
+            <input type="text" name="sobrenome" placeholder=" lastname" required><br><br>
+            <input type="email" name="email" placeholder=" Email@gmail.com" required><br><br>
+            <input type="password" name="senha" placeholder=" Password" required minlength="7"><br><br>
+            <input type="tel" name="telefone" placeholder=" (xx) xxxxx-xxxx" required maxlength="11"><br><br>
+            <input type="radio" name="genero" value="Feminino" required>Feminino
+            <input type="radio" name="genero" value="Masculino" required>Masculino
+            <input type="radio" name="genero" value="Outro" required>Outro<br><br>
+            <input type="file" name="arquivo"><br><br>
+        </fieldset><br><br><br><br><br>
+    </form>
+
+
+    <form action="form-cadastro01" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset class="borda">
+            <input type="text" name="rua" placeholder=" Rua" required>
+            <input type="number" name="numero" placeholder=" Nº" required><br><br>
+            <input type="text" name="estado" placeholder=" Estado" required><br><br>
+            <input type="text" name="cidade" placeholder=" Cidade" required><br><br>
+            <input type="text" name="complemento" placeholder="Complemento"><br>
+        </fieldset><br>
+    </form>
+
+    <input type="submit" name="enviar" value="Enviar" formaction="form-cadastro01" formmethod="post" formenctype="application/x-www-form-urlencoded" formnovalidate>
+
+    <footer class="rodape"><hr> 
+        <p><b>Desenvolvedor: Thiago Santos<br>
+            ©Todos os direitos autorais preventivos.</b></p>
+    </footer><hr>
+</section>
